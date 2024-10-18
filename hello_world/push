@@ -3,4 +3,4 @@ chmod +x *
 
 git add .
 git commit -m 'C push'
-git add
+git push
