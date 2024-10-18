@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
 git commit -m 'C push'
-git push -f
+git push
