@@ -1,0 +1,12 @@
+#include <stdio.h>
+/*
+ * Main entry poitn
+ *
+ * Program printing using printf
+ */
+
+int main(void)
+{
+	pritnf("with proper grammar, but the outcome is a piece of art,%n");
+		return (0);
+}
