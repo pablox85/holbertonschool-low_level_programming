@@ -1,4 +1,4 @@
-#include <stdio.h>
+include <stdio.h>
 /**
 *main - entry ponint
 *
@@ -7,12 +7,10 @@
 */
 int main(void)
 {
-	printf("Size of: %zu \n", sizeof(int));
 	printf("Size of: %zu \n", sizeof(char));
+	printf("Size of %zu \n", sizeof(int));
 	printf("Size of: %zu \n", sizeof(long int));
-	printf("Size of: %zu \n", sizeof(float));
-	printf("Size of: %zu \n", sizeof(long long int));
-	return (0);
+        printf("Size of: %zu \n", sizeof(long long));
+        printf("Size of: %zu \n", sizeof(float));
+        return (0);
 }
-
-
