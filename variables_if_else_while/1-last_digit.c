@@ -21,7 +21,7 @@ int main(void)
 	if (num1 > 5)
 		printf("%d and is greater than 5\n", num1);
 
-	else if (numero == 0)
+	else if (num1 == 0)
 		printf("%d and is 0\n", num1);
 
 	else
