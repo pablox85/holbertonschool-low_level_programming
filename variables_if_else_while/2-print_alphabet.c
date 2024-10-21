@@ -5,8 +5,16 @@
  */
 
 	int main(void)
+{
+	char i[26];
+
+	for (int j  = 0; j <= 26; j++)
 	{
-	for (int i = 'a'; i <= 'z'; i++)
-	putchar (i);
-	return (0);
+	i[j] = 'a' +j;
 	}
+	for (int j = 0; j < 26; j++)
+	{
+	putchar (i[j]);
+	}
+	return (0);
+}
