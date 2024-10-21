@@ -1,18 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-// <=6 "and is greater than 5"
-//==0 and is  0
-// =>5 "and is less than 6 and not  0"
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ * Description: Print
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
+	int num1;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	printf("%d\n",n);
-	/* your code goes there */
+
+	num1 = n % 10;
+	printf("%d\n", n);
+
+	if (num1 < 5)
+		printf("%d is greater than 5\n", num1);
+	else if (n == 0)
+		printf("%d is 0\n", num1);
+	else
+		printf("dale puto");
 	return (0);
 }
+
