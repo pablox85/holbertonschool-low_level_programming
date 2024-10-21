@@ -17,11 +17,11 @@ int main(void)
 	printf("%d\n", n);
 
 	if (num1 < 5)
-		printf("%dis greater than 5\n", num1);
+		printf("%d and is greater than 5\n", num1);
 	else if (n == 0)
-		printf("%dis 0\n", num1);
+		printf("%d and is 0\n", num1);
 	else
-		printf(" and is less than 6 and not 0");
+		printf(" and is less than 6 and not 0\n");
 	return (0);
 }
 
