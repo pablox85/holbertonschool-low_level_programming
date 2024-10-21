@@ -18,11 +18,11 @@ int main(void)
 	printf("%d\n", n);
 
 	if (num1 < 5)
-		printf("%d is greater than 5\n", num1);
+		printf(" is greater than 5\n", num1);
 	else if (n == 0)
-		printf("%d is 0\n", num1);
+		printf(" is 0\n", num1);
 	else
-		printf("dale puto");
+		printf(" dale puto");
 	return (0);
 }
 
