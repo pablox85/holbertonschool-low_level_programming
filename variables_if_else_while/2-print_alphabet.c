@@ -6,15 +6,13 @@
 
 	int main(void)
 {
-	char i[26];
+	char i;
 
-	for (int j  = 0; j <= 26; j++)
+	for(i = 'a'; i <= 'z'; i++)
 	{
-	i[j] = 'a' +j;
+	putchar(i);
 	}
-	for (int j = 0; j < 26; j++)
-	{
-	putchar (i[j]);
-	}
+	putchar('\n');
+	
 	return (0);
 }
