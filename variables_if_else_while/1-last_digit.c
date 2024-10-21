@@ -8,8 +8,7 @@
  */
 int main(void)
 {
-	int n;
-	int num1;
+	int n, num1;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -18,11 +17,11 @@ int main(void)
 	printf("%d\n", n);
 
 	if (num1 < 5)
-		printf(" is greater than 5\n", num1);
+		printf("%dis greater than 5\n", num1);
 	else if (n == 0)
-		printf(" is 0\n", num1);
+		printf("%dis 0\n", num1);
 	else
-		printf(" dale puto");
+		printf(" and is less than 6 and not 0");
 	return (0);
 }
 
