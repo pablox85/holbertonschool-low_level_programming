@@ -1,6 +1,5 @@
 #include <stdio.h>
-// corte en e
-//corte en q
+
 int main(void)
 {
         char i;
