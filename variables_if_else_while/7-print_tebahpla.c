@@ -1,15 +1,11 @@
 #include <stdio.h>
 
-/**
-*imprimir el abcdario
-*Return:0
-*/
+int main(void)
+{
+        int i;
 
-	int main(void)
-	{
-		char letra ='z'
-	letra--;
-	putchar(letra--);
-	
-	return(0);
-	}
+        for (i = 'z'; i >= 'a'; i--)
+	putchar(i);
+	putchar('\n');
+	return (0);
+}
