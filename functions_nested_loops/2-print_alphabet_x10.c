@@ -1,16 +1,19 @@
 #include "main.h"
 
 /**
- * main -code
- * Return: 0.
+ * print_alphabet_x10 - escribe 10 veces el abcdario
+ *seguido de una nueva línea
  */
+void print_alphabet_x10(void)
 
-int main (void)
 {
 	int i;
+	char j;
 
-for (i = 'a';  i <= 'z'; i++)
-_putchar(i++);
-return (0);
+	for (i = 0; i <= 9; i++)
+		for (j = 'a'; j <= 'z'; j++)
+		{
+			_putchar(j);
+		}
+	_putchar('\n');
 }
-
