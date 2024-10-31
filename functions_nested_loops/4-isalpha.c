@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _isalpha  - is alpha.
+ * _isalpha  - is alpha
+ * @c: - variable set to c
  *
- * Returns 1 if c is a letter, lowercase or uppercas
- * Returns 0 otherwise
+ * Return: 1 if c is a letter, lowercase or uppercas
+ * Return: 0 otherwise
  */
 
 int _isalpha(int c)
