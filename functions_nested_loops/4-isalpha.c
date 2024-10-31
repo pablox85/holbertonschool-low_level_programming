@@ -4,8 +4,7 @@
  * _isalpha  - is alpha
  * @c: - variable set to c
  *
- * Return: 1 if c is a letter, lowercase or uppercas
- * Return: 0 otherwise
+ * Return: 1 if c is a letter, lowercase or uppercase
  */
 
 int _isalpha(int c)
