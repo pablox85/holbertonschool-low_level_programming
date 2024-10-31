@@ -1,10 +1,10 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
- * _isalpha  - is alpha
- * @c: - variable set to c
- *
- * Return: 1 if c is a letter, lowercase or uppercase
+ *_isalpha- Nunca entiendo bien el ejercicio
+ *@c: letras del alfabeto
+ *Return: 1 if letter 0 isnt
  */
 
 int _isalpha(int c)
