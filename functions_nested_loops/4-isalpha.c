@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha  - est whether c is a character of class alpha.
+ * _isalpha  - is alpha.
  *
  * Returns 1 if c is a letter, lowercase or uppercas
  * Returns 0 otherwise
