@@ -5,6 +5,7 @@
  *
  * Return: 1 si es positivo, 0 si es cero, -1 si es negativo
  */
+:q
 
 
 int print_sign(int n)
