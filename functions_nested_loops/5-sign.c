@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * print_sign - Muestra el signo de un númer
+ * @n: variable de signos
+ *
+ * Return: 1 si es positivo, 0 si es cero, -1 si es negativo
+ */
 
 
 int print_sign(int n)
