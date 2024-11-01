@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m 'Push from Dell Latitud'
+git commit -m 'Push from Holberton'
 git push -f
