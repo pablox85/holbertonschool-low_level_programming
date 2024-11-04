@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *
- *
- */
+* print_line - kdasñkdñsa
+* @n: caracter
+*
+*/
 
 void print_line(int n)
 {
@@ -12,5 +13,5 @@ void print_line(int n)
 	{
 	_putchar('_');
 	}
-_putchar('\n');	
+_putchar('\n');
 }
