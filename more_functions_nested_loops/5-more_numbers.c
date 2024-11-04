@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- *
+ *more_numbers - and more
+ *Return 0: jdls
  *
  */
 
 void more_numbers(void)
 
 {
-	char nums [] ="01234567891011121314\n";
+	char nums[] = "01234567891011121314\n";
 	int i;
 	int j;
 
