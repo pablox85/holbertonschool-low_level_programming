@@ -1,32 +1,30 @@
 #include "main.h"
+
 /**
-*for del 5 al 9
-*
-*/
+ *print_most_numbers - jdljdl
+ *
+ */
 
 void print_most_numbers(void)
 
 {
-	
-int i;
+	int i;
 
-for (i = 0; i <= 9; i++)
-{
-	if ( i == 2 || i == 4)
-       	{
-	continue;
+	for (i = 0; i <= 9; i++)
+
+	{
+		if (i == 2 || i == 4)
+	{
+		continue;
 	}
-
-
-
-}
-	_putchar (i++);
-{
-	_putchar('\n');
-
-
-
-
-
+		else
+	{
+	}
+		{
+		_putchar(i + '0');
+	}
+	{
+		_putchar('\n');
+	}
 }
 }
