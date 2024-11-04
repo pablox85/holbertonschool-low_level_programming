@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- *
- *
- */
+*print_numbers - imprime numeros
+*Return:0
+*
+*/
 
 void print_numbers(void)
 
