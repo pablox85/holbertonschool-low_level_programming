@@ -2,18 +2,18 @@
 /**
  *_puts: imprime la string
  *@str: puntero de string
- *Return: 0
+ *
  */
 
 void _puts(char *str)
 {
 
-	char i;
+	int a = 0;
+
+	while (str[a] != '\0')
 	{
-		for (; *str != '\0'; i++)
-		{
-			i++;
-		}
-		_puts(str);
+		_putchar(str[a]);
+		a++;
 	}
+	_putchar('\n');
 }
