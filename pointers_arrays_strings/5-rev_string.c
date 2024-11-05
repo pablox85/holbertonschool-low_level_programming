@@ -1,29 +1,24 @@
 #include "main.h"
 #include <stdio.h>
-/**
-* rev_string - rev string
-* @s: puntero
-*
-*/
 
+/**
+ * rev_string - Reverses a string
+ * @s: Pointer to the string
+ */
 void rev_string(char *s)
 {
+    int i, j;
+    char temp;
 
-	int a = 0;
-	{
-		while (s[a] != '\0')
-		{
-			a++;
-		}
+    for (i = 0; s[i] != '\0'; i++)
+        ;
 
-		a--;
-		
-		while (a >= 0)
-		{
-			printf("%d",(s[a]));
-			a--;
-		}
+    i--; 
 
-	}
-	printf("\n");
+    for (j = 0; j < i; j++, i--)
+    {
+        temp = s[j];
+        s[j] = s[i];
+        s[i] = temp;
+    }
 }
