@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_puts: imprime la string
+ *_puts - imprime la string
  *@str: puntero de string
  *
  */
