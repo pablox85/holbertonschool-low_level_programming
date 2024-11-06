@@ -2,29 +2,20 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
- *
- */
+* puts2 - sarasea
+*@str: puntero
+*
+*
+*/
 
 void puts2(char *str)
+
 {
+	int i = 0;
 
-	char i =0;
-
-	for (; i < = 0; i++)
+	for (; str[i] != '\0'; i += 2)
 	{
-		i*2;
+		printf("%c", str[i]);
 	}
-	
-
-
-
-
-
-
-
-
-
+	printf("\n");
 }
