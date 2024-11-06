@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 * puts2 - sarasea
@@ -15,7 +14,7 @@ void puts2(char *str)
 
 	for (; str[i] != '\0'; i += 2)
 	{
-		printf("%c", str[i]);
+		_putchar(str[i]);
 	}
-	printf("\n");
+	_putchar('\n');
 }
