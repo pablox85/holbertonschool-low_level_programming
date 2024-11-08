@@ -1,8 +1,10 @@
 #include "main.h"
 /**
  *_memset - funcion
- *
- *
+ *@s: char
+ *@b: char
+ *@n: int
+ *Return: 0
  */
 
 
