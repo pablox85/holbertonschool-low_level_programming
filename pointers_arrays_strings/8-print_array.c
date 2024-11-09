@@ -4,7 +4,7 @@
 /**
 *print_array - funcion
 *@n: tamaÃo de array
-*
+*@a: mo se pa estas
 */
 void print_array(int *a, int n)
 {
