@@ -2,10 +2,8 @@
 #include <stdio.h>
 
 /**
-*
 *print_array - funcion
 *@n: tamaÃo de array
-*
 *
 */
 void print_array(int *a, int n)
