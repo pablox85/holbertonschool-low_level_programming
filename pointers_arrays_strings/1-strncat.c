@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *
- *
- *
- *
+ *@_strncat - djsldsa
+ *@src: source
+ *@dest: destino
+ *Return: dest
  *
  */
 char *_strncat(char *dest, char *src, int n)
