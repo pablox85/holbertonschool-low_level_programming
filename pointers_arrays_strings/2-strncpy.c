@@ -20,7 +20,6 @@ while (i < n && src[i] != '\0')
 	i++;
 }
 
-{
 	while (i < n)
 	{
 		dest[i] = '\0';
@@ -28,4 +27,4 @@ while (i < n && src[i] != '\0')
 	}
 
 }
-}
+
