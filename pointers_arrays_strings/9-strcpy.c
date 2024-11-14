@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * _strcpy - nose que poner pero copia
+ * _strcpy -  copia cosas
  * @dest: dasdsa
  * @src: dasdsa
- * return: dest
+ * Return: dest
+ *
  */
 
 char *_strcpy(char *dest, char *src)
