@@ -1,14 +1,15 @@
-#inlcude "main.h"
+#include "main.h"
 /**
- *
- *
- *
- *
+ * _strcpy - nose que poner pero copia
+ * @dest: dasdsa
+ * @src: dasdsa
+ * return: dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
+
 	while (*(src + i) != '\0')
 	{
 		*(dest + i) = *(src + i);
