@@ -2,10 +2,10 @@
 /**
  *string_toupper - function
  *Return: str
- *@char *: string
+ *
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 
 	int i = 0;

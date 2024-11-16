@@ -16,4 +16,3 @@ int main(void)
     printf("%s", str);
     return (0);
 }
-julien@ubuntu:~/$ gcc -Wall -pedant
