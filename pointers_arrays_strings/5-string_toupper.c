@@ -2,7 +2,7 @@
 /**
  *string_toupper - function
  *Return: str
- *
+ *@str: string
  */
 
 char *string_toupper(char *str)
