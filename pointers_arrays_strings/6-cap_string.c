@@ -12,8 +12,9 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0') /*busqueda carcter nulo*/
 	{
-	if (str[i] >= 97 && str[i] <= 122
-		i == 0 ||
+	if (str[i] >= 97 && str[i] <= 122)
+	{
+	if (i == 0 ||	
 		str[i -  1] == ',' ||
 		str [i - 1] == ';' ||
 		str [i - 1] == '.' ||
@@ -27,12 +28,14 @@ char *cap_string(char *str)
 		str [i - 1] == ' ' ||
 		str [i - 1] == '\t'||
 		str [i - 1] == '\n'||
-		)
-	{
+		{
+	str[i] = str[i] - 32;
+	}
 	
-	}
+}
+i++;
+	return (str);
+}
+}
 
-	}
 
-
-	/* str[i] = str[i] - 32; mayusculas */
