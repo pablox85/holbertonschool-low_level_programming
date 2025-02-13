@@ -3,6 +3,8 @@
 *.swp
 *.swo
 *.swn
+size32
+size64
 
 # Object files
 *.o
