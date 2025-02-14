@@ -1,14 +1,18 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 /**
  * main - negative or positive
  * Return: 0
  *
  */
-int main(void)
-
+	int main(void)
 {
-	int n;
-	scanf("%d", &n);
+int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
 	if (n > 0)
 	{
 		printf("is positive\n");
