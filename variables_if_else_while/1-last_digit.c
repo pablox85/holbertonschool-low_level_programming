@@ -28,6 +28,7 @@ int main(void)
 	printf("The last digit of %d", n);
 	printf(" is %d", dig);
 	printf(" and is 0 \n");
+	}
 	else
 	{
 		printf("The last digit of %d", n);
