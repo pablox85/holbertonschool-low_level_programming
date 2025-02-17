@@ -1,8 +1,12 @@
 # Prerequisites
 *.d
-*.swn
-*.swo
 *.swp
+*.swo
+*.swn
+size32
+size64
+*. 
+*main.c
 
 # Object files
 *.o
