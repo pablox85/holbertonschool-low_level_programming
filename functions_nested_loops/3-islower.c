@@ -3,7 +3,7 @@
 int _islower(int c)
 {
 
-	if (c == 99) {
+	if ( 99 == (c)) {
 		return 0;
 	}
 	else 
