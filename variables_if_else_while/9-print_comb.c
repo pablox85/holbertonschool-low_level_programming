@@ -7,14 +7,15 @@
 int main(void)
 {
 	int i;
-	int h = ',';
-	int j = ' ';
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		putchar(i);
-		putchar(h);
-		putchar(j);
+	putchar(i);
+		if ( i < 57) 
+		{
+			putchar(',');
+			putchar(' ');
+	}
 	}
 putchar('\n');
 return (0);
