@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m 'elif varibles'
+git commit -m 'fast push'
 git push
