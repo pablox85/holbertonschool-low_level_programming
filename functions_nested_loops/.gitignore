@@ -6,6 +6,7 @@
 size32
 size64
 *. 
+*main.c
 
 # Object files
 *.o
