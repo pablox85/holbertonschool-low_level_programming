@@ -3,11 +3,11 @@
 void times_table(void)
 {
         int j;
-	
+int l;	
 		for (j = '0'; j <= '9'; j++)
 	{
 			_putchar(j), _putchar(','), _putchar(' ');
-	
+			
 	}
 		_putchar('\n');
 
@@ -15,6 +15,11 @@ void times_table(void)
 	{
                  for (j = '0'; j <= '9'; j+=2)
                           _putchar(j), _putchar(','), _putchar(' ');
+		 if ( j >= 10)
+		 {
+			 l = j % 10;
+			 _putchar(l + 48);
+		 }
         }
 		_putchar('\n');
 	
