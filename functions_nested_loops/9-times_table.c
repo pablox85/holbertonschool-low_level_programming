@@ -2,74 +2,29 @@
 
 void times_table(void)
 {
-        int j;
-int l;	
-		for (j = '0'; j <= '9'; j++)
-	{
-			_putchar(j), _putchar(','), _putchar(' ');
-			
-	}
-		_putchar('\n');
+    int i, j, result;
 
-        
-	{
-                 for (j = '0'; j <= '9'; j+=2)
-                          _putchar(j), _putchar(','), _putchar(' ');
-		 if ( j >= 10)
-		 {
-			 l = j % 10;
-			 _putchar(l + 48);
-		 }
+    for (i = 0; i <= 9; i++)
+    {
+        for (j = 0; j <= 9; j++)
+        {
+            result = i * j;
+
+            if (j != 0)
+            {
+                _putchar(',');
+                _putchar(' ');
+            }
+
+            if (result < 10)
+                _putchar(result + '0');
+            else
+            {
+                _putchar(result / 10 + '0');
+                _putchar(result % 10 + '0');
+            }
         }
-		_putchar('\n');
-	
-	
-	{ 
-		for (j = '0'; j <= '9'; j+=3) 
-			_putchar(j), _putchar(','), _putchar(' ');
-	}
-		_putchar('\n');
-	
-	
-	{
-		for (j = '0'; j <= '9'; j+=4)
-			_putchar(j), _putchar(','), _putchar(' ');
-	}
-		_putchar('\n');
-		
-        
-	{
-                for (j = '0'; j <= '9'; j+=5)
-                        _putchar(j), _putchar(','), _putchar(' ');
-        }
-		_putchar('\n');
-        
-	
-	{
-                for (j = '0'; j <= '9'; j+=6)
-                        _putchar(j), _putchar(','), _putchar(' ');
-        }
-		_putchar('\n');
-        
-	
-	{
-                for (j = '0'; j <= '9'; j+=7)
-                        _putchar(j), _putchar(','), _putchar(' ');
-	}
-		_putchar('\n');
-        
-	
-	{       
-		for (j = '0'; j <= '9'; j +=8)
-			_putchar(j), _putchar(','), _putchar(' ');
-        }
-		_putchar('\n');
-		
-		for (j = '0'; j <= '9'; j+=9)
-	{
-			_putchar(j); _putchar(','); _putchar(' ');
-	
-	}
-		_putchar('\n');
- 
+        _putchar('\n');
+    }
 }
+
