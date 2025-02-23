@@ -9,11 +9,16 @@ void print_to_98(int n)
 {
 	int i;
 
-	if (n > 0 || n < 0)
+	if (n > 0 && n < 98)
 	{
 		for (i = n; i <= 99; i++)
 		{
 			printf("%d, ",i);
+			if (i == 99)
+			{
+			printf("98\n");
+			
+			}	
 		}
 	}
 	else if (n > 98)
