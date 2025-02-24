@@ -12,13 +12,13 @@ void print_line(int n)
 
 	for (i = 0; i <= n; i++)
 	{
-		if (n <= '0')
+		if (n <= 0)
 		{
 			_putchar(10);
 		}
 		else 
 		{
-			_putchar(i);
+			_putchar((i) + 95);
 		}
 		_putchar(10);
 	}
