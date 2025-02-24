@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m 'fast push'
+git commit -m 'more loops'
 git push
