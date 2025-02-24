@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *
- *
+ *print_line - imprime lineas
+ *@n: parametro definido en el main
  *
  */
 
@@ -16,12 +16,12 @@ void print_line(int n)
 		{
 			_putchar(95);
 		}
-		else 
+		else
 		{
 			_putchar(10);
 		}
-	
+
 	}
 
-_putchar(10);
+	_putchar(10);
 }
