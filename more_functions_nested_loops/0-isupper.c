@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *
- *
+ * _isupper - veriffica si es mayuscula
+ * Return: 1 si es true, 0 si es false
+ * @c. parametro pasado
  *
  */
 
