@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *
- *
- *
+ * _isdigit - verifica si es digito
+ * @c: caracter proporcionado
+ * Return: 1 true 0 false
  */
 
 int _isdigit(int c)
