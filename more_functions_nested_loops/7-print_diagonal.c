@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *
- * 92 = \ 
+ * 92 = \
  */
 
 void print_diagonal(int n)
@@ -13,7 +13,7 @@ void print_diagonal(int n)
 	{
 		if (n > 0)
 		{
-			_putchar(92);
+			_putchar(32);
 			
 		}
 		else
