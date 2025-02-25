@@ -4,8 +4,7 @@
  * Return: 0
  *
  */
-int main(void)
-{
+int main(void){
 
 	int i;
 
@@ -13,7 +12,7 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz i");
 		}
 		else if (i % 3 == 0)
 		{
@@ -26,6 +25,12 @@ int main(void)
 		else
 		{
 			printf("%d ", i);
+		}
+
+		if ( i == 100)
+		{
+		continue;
+		printf(' ');
 		}
 
 	}
