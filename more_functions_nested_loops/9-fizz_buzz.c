@@ -30,11 +30,11 @@ int main(void){
 		if ( i == 100)
 		{
 		continue;
-		printf(" ");
+		printf("\n");
 		}
 
 	}
-	printf("\n");
+	
 return (0);
 
 }
