@@ -1,6 +1,10 @@
 #include <stdio.h>
-
-int main (void)
+/**
+ * main - main
+ * Return: 0
+ *
+ */
+int main(void)
 {
 
 	int i;
