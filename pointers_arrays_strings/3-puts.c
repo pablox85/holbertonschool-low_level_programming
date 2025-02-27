@@ -12,7 +12,7 @@ void _puts(char *str)
 
 	for (i = 0; i <= *str; i++)
 	{
-		i++;
+		
 		str++;
 	}
 	printf("%s\n", str);
