@@ -8,12 +8,15 @@
 void _puts(char *str)
 {
 
-	int i = 0;
+int i = 0;
 
-	for (i = 0; i <= *str; i++)
+	while (str[i] != '\0')
 	{
-		
-		str++;
+
+		_putchar(str[i]);
+		i++;
 	}
-	printf("%s\n", str);
+	_putchar(10);
+
+
 }
