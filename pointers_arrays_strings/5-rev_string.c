@@ -20,6 +20,6 @@ int temp;
 		i++;
 		j--;
 	}
-
+return 0;
 }
 
