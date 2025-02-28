@@ -17,7 +17,7 @@ int largo = 0;
 	{
 		largo++;
 	}
-		j = largo -1;
+			j = largo - 1;
 
 	while (i < j)
 	{
