@@ -11,24 +11,24 @@ void puts_half(char *str)
 	int largo = 0;
 	int mitad = 0;
 
-	while (str[i])
+	while (str[i++])
 	{
-		i++;
 		largo++;
 	}
+
 	if ((largo % 2) == 0)
 	{
 		mitad = largo / 2;
 	}
+
 	else
 	{
-		mitad = (mitad + 1) / 2;
+		mitad = (largo + 1) / 2;
 	}
 
-	for (i = mitad; str[i]; i++)
+	for (i = mitad; i < largo; i++)
 	{
 		_putchar(str[i]);
 	}
-
 _putchar(10);
 }
