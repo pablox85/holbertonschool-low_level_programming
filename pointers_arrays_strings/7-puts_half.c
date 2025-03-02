@@ -16,11 +16,19 @@ void puts_half(char *str)
 		i++;
 		largo++;
 	}
-	mitad = largo / 2;
+	if ((largo % 2) == 0)
+	{
+		mitad = largo / 2;
+	}
+	else
+	{
+		mitad = (mitad + 1) / 2;
+	}
 
 	for (i = mitad; str[i]; i++)
 	{
 		_putchar(str[i]);
 	}
+
 _putchar(10);
 }
