@@ -16,10 +16,6 @@ void puts2(char *str)
 	{
 		i++;
 		_putchar(str[(i -1) *2]);
-				if (str[i] == '.')
-				{
-				break;
-				}
 	}
 _putchar(10);
 
