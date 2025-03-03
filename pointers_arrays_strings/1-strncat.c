@@ -3,7 +3,7 @@
  *_strncat - concatena 2 string
  *@dest: cadena destino
  *@src: cadena fuenfuente
- *@n: no sabe no contesta
+ *@n: no sabe no contest
  *Return: dest
  */
 
