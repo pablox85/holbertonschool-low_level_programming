@@ -1,9 +1,9 @@
 #include "main.h"
 #include <limits.h>
 /**
- *_atoi - string a numero 
+ *_atoi - string a numero
  *@s: string dada
- *Return: retorna el valor 
+ *Return: retorna el valor
  */
 
 int _atoi(char *s)
