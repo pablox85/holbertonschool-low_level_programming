@@ -15,15 +15,11 @@ char *_strncpy(char *dest, char *src, int n)
 
 		while (src[i] != '\0')
 		{
-			i++; // borrar
-			if ( n <= i)
-			{
-				break;
-			}
-			dest = src;
-
 			i++;
-			j++;
+        if(i < n)
+        {
+        break;
+        }
 
 		}
 
