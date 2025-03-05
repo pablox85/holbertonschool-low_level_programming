@@ -1,4 +1,3 @@
-#include <unistd.h>
 
 int _putchar(char);
 void swap_int(int *a, int *b);
