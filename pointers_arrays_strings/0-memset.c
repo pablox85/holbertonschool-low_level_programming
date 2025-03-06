@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * saasara borrar betty putea|:w
  *_memset - seteo de memoria
  *@s: - puntero de char s
  *@b: - valor constante
- *n@: - bytes a llenar
+ *@n: - bytes a llenar
+ *Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -12,10 +12,9 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (i = 0; i < n; i++)
 	{
-			s[i] = b;
+		s[i] = b;
 
 	}
-	return s;
+	return (s);
 }
-
 
