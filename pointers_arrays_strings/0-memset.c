@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+ * saasara borrar betty putea|:w
  *_memset - seteo de memoria
  *@s: - puntero de char s
  *@b: - valor constante
