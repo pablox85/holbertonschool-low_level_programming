@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stddef.h>
 /**
- *_strpbrk - funcion
+ *_strpbrk - funcion de busqeuda
  *@s: array
  *@accept: comparacion
- *return: algo
+ *Return: valores de accept
  */
 
 char *_strpbrk(char *s, char *accept)
