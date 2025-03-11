@@ -8,7 +8,11 @@ size64
 *. 
 *main.c
 core.*
-
+a
+s
+2-str_concat
+3-alloc_grid
+4-free_grid
 # Object files
 *.o
 *.ko
