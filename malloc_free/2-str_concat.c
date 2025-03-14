@@ -5,9 +5,7 @@
 char *str_concat(char *s1, char *s2)
 {
 
-	size_t ss1 = 0;
-	size_t ss2 = 0;
-	size_t i = 0;
+	size_t ss1 = 0, ss2 = 0, i = 0;
 	char *strN;
 
 	if (s1 == NULL)
