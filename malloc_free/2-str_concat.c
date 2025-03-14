@@ -7,6 +7,7 @@ char *str_concat(char *s1, char *s2)
 
 	size_t ss1;
 	size_t ss2;
+	size_t i;
 	char *strN;
 
 	if (s1 == NULL)
@@ -29,11 +30,18 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	strncpy(strN, s1, ss1);
-	strncpy(strN + ss1, s2, ss2);
+	for (i = 0; i < ss1; i++)
+	{
+	strN[i] = s1[i];
+	}
+
+	for (i = 0; i < ss2; i++)
+	{
+	strN[ss1 + i] = s2[i];
+	}
 
 	strN[ss1 + ss2] = '\0';
-	
+
 return (strN);
 
 
