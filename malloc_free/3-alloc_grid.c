@@ -1,5 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
+/**
+ *alloc_grid - nose
+ *@width: ancho de fila
+ *@height: altura
+ *Return: 
+ */
 
 int **alloc_grid(int width, int height)
 {
