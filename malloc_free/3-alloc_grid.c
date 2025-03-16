@@ -4,7 +4,7 @@
  *alloc_grid - nose
  *@width: ancho de fila
  *@height: altura
- *Return: 
+ *Return: grid
  */
 
 int **alloc_grid(int width, int height)
@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0)
 		return (NULL);
-	if(height <= 0)
+	if (height <= 0)
 		return (NULL);
 
 	grid = malloc(sizeof(int *) * height);
@@ -22,14 +22,14 @@ int **alloc_grid(int width, int height)
 		if (grid == NULL)
 			return (NULL);
 
-	for(h = 0; h < height; h++)
+	for (h = 0; h < height; h++)
 	{
 		grid[h] = malloc(sizeof(int) * width);
 		if (grid[h] == NULL)
 		{
 			for(; h >= 0; h--)
 				free(grid[h]);
-			
+
 			free(grid);
 		}
 	}
