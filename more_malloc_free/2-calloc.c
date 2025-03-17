@@ -13,7 +13,9 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	size_t calcMemoria = nmemb * size;
+	size_t i;
 	void *memPedida = malloc(calcMemoria);
+	unsigned char *ptr = (unsigned char *)memPedida;
 
 	if (nmemb == 0)
 		return (NULL);
@@ -26,8 +28,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (memPedida == NULL)
 		return (NULL);
 
-	unsigned char *ptr = (unsigned char *)memPedida;
-	for(size_t i = 0; i > calcMemoria; i++)
+	for(i = 0; i > calcMemoria; i++)
 	{
 		ptr[i] = 0;
 	}
