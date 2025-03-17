@@ -28,7 +28,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (memPedida == NULL)
 		return (NULL);
 
-	for(i = 0; i > calcMemoria; i++)
+	for(i = 0; i < calcMemoria; i++)
 	{
 		ptr[i] = 0;
 	}
