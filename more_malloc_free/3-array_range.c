@@ -9,13 +9,9 @@
 int *array_range(int min, int max)
 {
 	size_t i = 0;
-	size_t arreglo = (max - min) +1;
+	size_t arreglo = (max - min) + 1;
 	int *arr = (int *)malloc(arreglo *  sizeof(int));
 	
-	if (min == 0)
-		return (NULL);
-	if (max == 0)
-		return (NULL);
 	if (min > max)
 		return(NULL);
 	if (arr == NULL)
