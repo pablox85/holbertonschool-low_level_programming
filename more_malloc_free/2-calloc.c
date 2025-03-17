@@ -26,7 +26,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb > (SIZE_MAX / size))
 		return (NULL);
 
-memPedida = malloc(calcMemoria);
 
 	if (memPedida == NULL)
 		return (NULL);
