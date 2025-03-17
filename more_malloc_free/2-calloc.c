@@ -9,29 +9,29 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    size_t calcMemoria;
-    void *memPedida;
-    unsigned char *ptr;
-    size_t i;
+	size_t calcMemoria;
+	void *memPedida;
+	unsigned char *ptr;
+	size_t i;
 
-    if (nmemb == 0 || size == 0)
-        return (NULL);
-    if (nmemb > (SIZE_MAX / size))
-        return (NULL);
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	if (nmemb > (SIZE_MAX / size))
+		return (NULL);
 
-    calcMemoria = nmemb * size;
+	calcMemoria = nmemb * size;
 
-    memPedida = malloc(calcMemoria);
+	memPedida = malloc(calcMemoria);
 
-    if (memPedida == NULL)
-        return (NULL);
+	if (memPedida == NULL)
+		return (NULL);
 
-    ptr = (unsigned char *)memPedida;
-    for (i = 0; i < calcMemoria; i++)
-    {
-        ptr[i] = 0;  
-    }
+	ptr = (unsigned char *)memPedida;
+	for (i = 0; i < calcMemoria; i++)
+	{
+		ptr[i] = 0;
+	}
 
-    return (memPedida);
+return (memPedida);
 }
 
