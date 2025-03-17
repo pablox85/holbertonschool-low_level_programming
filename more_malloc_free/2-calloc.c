@@ -26,8 +26,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (memPedida == NULL)
 		return (NULL);
 
-	memset(memPedida, 0, calcMemoria);
-
+	unsigned char *ptr = (unsigned char *)memPedida;
+	for(size_t i = 0; i > calcMemoria; i++)
+	{
+		ptr[i] = 0;
+	}
+		
 	return (memPedida);
 
 
