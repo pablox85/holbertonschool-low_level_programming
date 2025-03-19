@@ -1,4 +1,4 @@
-#include "function_pointers.1h"
+#include "function_pointers.h"
 #include <stdlib.h>
 /**
  *print_name - imprime un arreglo dado por punteros
