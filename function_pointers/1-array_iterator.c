@@ -1,8 +1,8 @@
 #include "function_pointers.h"
 /**
- *
- *
- *
+ *array_iterator - iterador de arrays
+ *@array: arreglo a acceder (tipo de datos)
+ *@size_t: tama√o del arrego
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
@@ -15,6 +15,5 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	{
 		action(array[i]);
 	}
-
 
 }
