@@ -1,6 +1,12 @@
+#ifndef CALC_H
+#define CALC_H
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ *struct op - operaciones
+ *@op: formato de operador
+ *@f: ptr a funcion
+ */
 typedef struct op
 {
 	char *op;
@@ -13,3 +19,5 @@ int op_sub(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
+
+#endif
