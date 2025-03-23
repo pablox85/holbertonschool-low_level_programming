@@ -24,7 +24,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	while (i < n)
 	{
 
-	int cArgs = va_arg(args, int);
+	unsigned int cArgs = va_arg(args, unsigned int);
 
 		if (i > 0)
 		{
