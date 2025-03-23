@@ -1,42 +1,32 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
-/**
- *print_numbers - imprime numeros
- *@separator: separador
- *@n: numeros dados
- */
 
+/**
+ * print_numbers - Imprime números separados por un separador.
+ * @separator: Separador entre los números.
+ * @n: Cantidad de números.
+ */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+    unsigned int i;
+    va_list args;
 
-	unsigned int i = 0;
-	va_list args;
+    va_start(args, n);
 
-	va_start(args, n);
+    for (i = 0; i < n; i++)
+    {
+        int num = va_arg(args, int);
+        printf("%d", num);
 
-	if (separator == NULL)
-		return;
+        /* Imprimir el separador solo si no es el último número */
+        if (separator != NULL && i < n - 1)
+        {
+            printf("%s", separator);
+        }
+    }
 
-	if (n == 0)
-		return;
-
-	while (i < n)
-	{
-
-	unsigned int cArgs = va_arg(args, unsigned int);
-
-		if (i > 0)
-		{
-		 printf("%s", separator);
-		}
-	printf("%d", cArgs);
-	i++;
-
-
-	}
-	printf("\n");
-	va_end(args);
-
-
+    printf("\n");
+    va_end(args);
 }
+
