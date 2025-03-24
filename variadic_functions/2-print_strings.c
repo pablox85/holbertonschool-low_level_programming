@@ -10,12 +10,15 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 
-	unsigned int i; //iteracion sobre argumentos
-	char *argKeeper; //almacena temporalmente cada arg pasado a la fun
+	unsigned int i;
+	char *argKeeper;
 
-	va_list arg; //recorre argumentos pasados a la funcion
+	va_list arg; 
 
-	va_start(arg, n); //inicia los argumentos desde n en adelante
+	va_start(arg, n);
+
+	if (separator == NULL)
+		return;
 
 	for (i = 0; i < n; i++)
 	{
