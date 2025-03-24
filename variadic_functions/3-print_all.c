@@ -43,6 +43,7 @@ void print_all(const char * const format, ...)
 				argStr = "(nil)";
 			printf("%s", argStr);
 			flag = 1;
+			default;
 			break;
 	}
 	i++;
