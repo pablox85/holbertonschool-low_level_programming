@@ -3,26 +3,21 @@
 #include <stdio.h>
 /**
  * print_all - imprime todo
- * @char: caracteres
  * @format: tipos de variables
  */
 
 void print_all(const char * const format, ...)
 {
-
-	int i = 0;
+	int i = 0, flag = 0;
 	char *argStr;
-	int flag = 0;
-
 	va_list arg;
+
 	va_start(arg, format);
 
 	while (format && format[i])
 	{
 		if (flag)
 			printf(", ");
-
-
 	switch (format[i])
 	{
 		case 'c':
@@ -39,18 +34,17 @@ void print_all(const char * const format, ...)
 			break;
 		case 's':
 			argStr = va_arg(arg, char *);
-			if(!argStr)
+			if (!argStr)
 				argStr = "(nil)";
 			printf("%s", argStr);
 			flag = 1;
+			break;
 		default:
+			flag = 0;
 			break;
 	}
 	i++;
 	}
-
-
 printf("\n");
 va_end(arg);
-
 }
