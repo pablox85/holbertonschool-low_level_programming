@@ -1,16 +1,7 @@
-#include <stdio.h>
+#include "dog.h"
 
-typedef struct {
-char name[20] ;
-double age;
-char owner [20];
-} dog;
-
-int main () 
-{
-	dog myDog = {"Poppy", 3.5, "Bob"};
-	printf("My name is %s, and I am %f\n", myDog.name, myDog.age);
-	return (0);
-}
-	
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner);
 
