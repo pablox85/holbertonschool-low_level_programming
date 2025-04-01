@@ -1,16 +1,21 @@
 #!/bin/bash
 
+# Obtener el último archivo modificado basado en la fecha de modificación en el directorio del repo
+ultimo_archivo=$(git status --porcelain | grep ' M ' | awk '{print $2}' | tail -n 1)
 
-ultimo_archivo=$(git ls-files --modified | tail -n 1)
-
+# Verificar si hay archivos modificados
 if [ -z "$ultimo_archivo" ]; then
     echo "No hay archivos modificados para agregar."
     exit 1
 fi
 
+# Pedir el mensaje del commit
 read -p "Ingrese commit: " mensaje
 
+# Agregar, hacer commit y push del último archivo modificado
 git add "$ultimo_archivo"
 git commit -m "$mensaje"
 git push
-i
+
+echo "Se subió: $ultimo_archivo"
+
