@@ -1,7 +1,16 @@
 #!/bin/bash
 
+
+ultimo_archivo=$(git ls-files --modified | tail -n 1)
+
+if [ -z "$ultimo_archivo" ]; then
+    echo "No hay archivos modificados para agregar."
+    exit 1
+fi
+
 read -p "Ingrese commit: " mensaje
 
-git add .
+git add "$ultimo_archivo"
 git commit -m "$mensaje"
 git push
+i
