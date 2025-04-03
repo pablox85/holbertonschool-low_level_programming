@@ -2,10 +2,21 @@
 /**
  *print_list - lista 
  *@h: puntero con cosas....
+ *Return: retorno
  */
 size_t print_list(const list_t *h)
 {
 
-aca va toda la sarasa
-linea nueva
+ size_t count = 0;
+
+    while (h)
+    {
+        if (h->str)
+            printf("[%d] %s\n", h->len, h->str);
+        else
+            printf("[0] (nil)\n");
+        count++;
+        h = h->next;
+    }
+    return count;
 }
