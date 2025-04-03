@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  *print_list - lista
  *@h: puntero con cosas....
@@ -11,11 +12,16 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 		if (h->str)
-		printf("[%d] %s\n", h->len, h->str);
-	else
-		printf("[0] (nil)\n");
+		{
+			printf("[%d] %s\n", h->len, h->str);
+		}
+		else
+		{
+			printf("[0] (nil)");
+		}
 		count++;
 		h = h->next;
 	}
 	return (count);
 }
+
