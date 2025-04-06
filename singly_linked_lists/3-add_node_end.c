@@ -6,38 +6,48 @@
  * add_node_end - agrega un nodo al fina
  * @head: inicio lista
  * @str: puntero con la str
- * return: retorna el contenido del nodo
+ * Return: retorna el contenido del nodo
  */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *nuevoNodo;
-	unisgned int i = 0;
+	unsigned int i = 0;
+	list_t *nuevoNodo, *temp;
+
+	temp = *head;
 
 	if (str == NULL)
 		return (NULL);
 
-	nuevoNodo=malloc(sizeof(list_t));
-
-	nuevoNodo->str = srtdup(str);
-
+	nuevoNodo = malloc(sizeof(list_t));
 	if (nuevoNodo == NULL)
+		return (NULL);
+
+	nuevoNodo->str = strdup(str);
+	if (nuevoNodo->str == NULL)
 	{
 		free(nuevoNodo);
 		return (NULL);
 	}
 
-	while (str != '\0')
+	while (nuevoNodo->str[i] != '\0')
 		i++;
 
 	nuevoNodo->len = i;
 	nuevoNodo->next = NULL;
 
-	while (str = '\0')
+	if (*head == NULL)
 	{
-		free(nuevoNUmero);
-		reurn (NULL);
-
-
-
+		*head = nuevoNodo;
+		return (nuevoNodo);
+	}
+	else
+	{
+		while (temp->next != NULL)
+		{
+			temp = temp->next;
+		}
+		temp->next = nuevoNodo;
+		return (nuevoNodo);
+	}
 }
