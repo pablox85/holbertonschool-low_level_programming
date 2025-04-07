@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
  * delete_dnodeint_at_index - borra un nodo dadod por el index
- * @head - inicio nodos
- * @index - indice de nodos
+ * @head: inicio nodos
+ * @index: indice de nodos
  * Return: 1 succesful -1 fails
  */
 
