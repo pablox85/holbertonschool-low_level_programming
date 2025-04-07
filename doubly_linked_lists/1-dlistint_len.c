@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * dlistint_len - largo de los nodos
- * @h: puntero incio nood
- * Return: algo
+ * dlistint_len - cuenta cantidad de nodos
+ * @h: puntero incio nodo
+ * Return: cantidad d nodos
  */
 
 size_t dlistint_len(const dlistint_t *h)
