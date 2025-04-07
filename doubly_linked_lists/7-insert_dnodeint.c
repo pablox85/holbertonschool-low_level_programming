@@ -4,7 +4,7 @@
 /**
  * insert_dnodeint_at_index - inserta nodo en lugar especifico
  * @h: puntero a la lista
- * @idx indice a insertar
+ * @idx: indice a insertar
  * @n: valor nodo
  * Return: valor del nuevo nodo
  */
