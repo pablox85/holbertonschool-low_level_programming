@@ -54,7 +54,7 @@ if (bytes_written == -1)
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 close(fd_from);
 close(fd_to);
-exit(98);
+exit(99);
 }
 bytes_read = read(fd_from, buffer, 1024);
 }
