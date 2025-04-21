@@ -63,7 +63,7 @@ if(bytes_read == -1)
     dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
     close(fd_from);
     close(fd_to);
-    exit(98;)
+    exit(98);
 }
 }
 if (close(fd_from) == -1)
