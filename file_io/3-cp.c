@@ -18,7 +18,7 @@ ssize_t bytes_read, bytes_written;
 int fd_from, fd_to;
 char *file_from = argv[1]c, *file_to = argv[2];
 
-if (argc != argv)
+if (argc != *argv)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
