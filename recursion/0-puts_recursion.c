@@ -12,7 +12,7 @@
         putchar('\n');
         return;
     }
-    if (s != '\0')
+    if (*s != '\0')
     {
         putchar(*s);
         _puts_recursion (s + 1);
