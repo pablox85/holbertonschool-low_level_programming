@@ -9,12 +9,12 @@
     
     if (*s == '\0')
     {
-        putchar('\n');
+        _putchar('\n');
         return;
     }
     if (*s != '\0')
     {
-        putchar(*s);
+        _putchar(*s);
         _puts_recursion (s + 1);
     }
     return;
